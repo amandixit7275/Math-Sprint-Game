@@ -23,7 +23,7 @@
               <input type="radio" name="questions" value="10" id="value-10" />
               <div class="best-score">
                 <span>Best Score</span>
-                <div class="best-score-value">0.0s</div>
+                <div class="best-score-value"></div>
               </div>
             </div>
             <!-- ------- 25 Questions Radio Input------ -->
@@ -32,7 +32,7 @@
               <input type="radio" name="questions" value="25" id="value-25" />
               <div class="best-score">
                 <span>Best Score</span>
-                <div class="best-score-value">0.0s</div>
+                <div class="best-score-value"></div>
               </div>
             </div>
             <!-- ------- 50 Questions Radio Input------ -->
@@ -41,7 +41,7 @@
               <input type="radio" name="questions" value="50" id="value-50" />
               <div class="best-score">
                 <span>Best Score</span>
-                <div class="best-score-value">0.0s</div>
+                <div class="best-score-value"></div>
               </div>
             </div>
             <!-- ------- 99 Questions Radio Input------ -->
@@ -50,7 +50,7 @@
               <input type="radio" name="questions" value="99" id="value-99" />
               <div class="best-score">
                 <span>Best Score</span>
-                <div class="best-score-value">0.0s</div>
+                <div class="best-score-value"></div>
               </div>
             </div>
           </div>
@@ -64,7 +64,7 @@
 
       <!-- CountDown Page -->
       <div class="card" id="countdown-page" hidden>
-        <h1 class="countdown">3</h1>
+        <h1 class="countdown"></h1>
       </div>
 
       <!-- Game Page -->
@@ -72,32 +72,11 @@
         <!-- Item Container  -->
         <div class="item-container">
           <div class="selected-item"></div>
-          <div class="item">
-            <h1>3 x 3 = 30</h1>
-          </div>
-          <div class="item">
-            <h1>3 x 3 = 30</h1>
-          </div>
-          <div class="item">
-            <h1>3 x 3 = 30</h1>
-          </div>
-          <div class="item">
-            <h1>3 x 3 = 30</h1>
-          </div>
-          <div class="item">
-            <h1>3 x 3 = 30</h1>
-          </div>
-          <div class="item">
-            <h1>3 x 3 = 30</h1>
-          </div>
-          <div class="item">
-            <h1>3 x 3 = 30</h1>
-          </div>
         </div>
         <!-- Right Wrong Button        -->
         <div class="item-footer">
-          <button class="wrong">Wrong</button>
-          <button class="right">Right</button>
+          <button class="wrong" onclick="select(false)">Wrong</button>
+          <button class="right" onclick="select(true)">Right</button>
         </div>
       </div>
       <!-- Score Page -->
@@ -111,12 +90,13 @@
         </div>
         <!-- Play Again Button  -->
         <div class="score-footer">
-          <button class="play-again">Play Again</button>
+          <button class="play-again" onclick="PlayAgain()">Play Again</button>
         </div>
       </div>
     </div>
 
     <!-- Script -->
+    <script src="shuffle.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
